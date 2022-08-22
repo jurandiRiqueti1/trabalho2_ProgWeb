@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+    <title>Questão 2</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-xl-6 p-3 mt-5 rounded-3 shadow bg-light">
+                    <h3 class="text-center">Tipo do Triângulo</h3>
+                    <hr class="my-3">
+                    <form id="form">
+                        <div class="row gy-3">
+                            <div class="col-md-12">
+                                <label for="lado-a" class="form-label">Lado A</label>
+                                <input type="number" step="any" id="lado-a" class="form-control" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="lado-b" class="form-label">Lado B</label>
+                                <input type="number" step="any" id="lado-b" class="form-control" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="lado-c" class="form-label">Lado C</label>
+                                <input type="number" step="any" id="lado-c" class="form-control" required>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="mt-2 w-100 btn btn-primary btn-lg">Calcular</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div id="result-div" class="d-none col-md-6 col-xl-6 mt-4 rounded-3 shadow bg-light">
+                    <div id="resultado" class="my-3"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/ex3.js"></script>
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+@import url(../Bootstrap/bootstrap.min.css);
+@import url(normalize.css);
+
+body{
+    background-color: rgb(190, 213, 255);
+}

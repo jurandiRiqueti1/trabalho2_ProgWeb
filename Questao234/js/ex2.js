@@ -9,15 +9,11 @@ function calc(consumo, vUnitario){
 }
 
 function setResultado(msg){
-    document.querySelector('#result-div').classList.remove('d-none');
-
-    let divResult = document.querySelector('#resultado');
-    divResult.innerHTML = '';
-
-    let p = document.createElement('p');
-    p.innerHTML = `Resultado: R$ ${msg}`;
-
-    divResult.appendChild(p);
+    let divResult = document.querySelector('#result-div-2');
+    
+    divResult.classList.remove('d-none');
+    
+    divResult.innerHTML = `Resultado: R$ ${msg}`;
 }
 
 function click(event) {
@@ -33,6 +29,6 @@ function click(event) {
 
 }
 
-const form = document.querySelector('#form');
+const form = document.querySelector('#form-2');
 
 form.addEventListener('submit', click);

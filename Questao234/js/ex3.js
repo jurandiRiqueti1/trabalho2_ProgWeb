@@ -17,19 +17,15 @@ function tipoTriangulo(a,b,c){
     return msg;
 }
 
-function setResultado(msg){
-    document.querySelector('#result-div').classList.remove('d-none');
+function setResultado2(msg){
+    let divResult = document.querySelector('#result-div-3');
 
-    let divResult = document.querySelector('#resultado');
-    divResult.innerHTML = '';
+    divResult.classList.remove('d-none');
 
-    let p = document.createElement('p');
-    p.innerHTML = msg;
-
-    divResult.appendChild(p);
+    divResult.innerHTML = msg;
 }
 
-function click(event) {
+function click2(event) {
     event.preventDefault();
     
     let a = document.querySelector('#lado-a');
@@ -39,9 +35,9 @@ function click(event) {
     let result = tipoTriangulo(a.value,b.value,c.value);
     
     console.log(result);
-    setResultado(result);
+    setResultado2(result);
 }
 
-const form = document.querySelector('#form');
+const form2 = document.querySelector('#form-3');
 
-form.addEventListener('submit', click);
+form2.addEventListener('submit', click2);

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+    <title>Questões 2 - 3 - 4</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+
+            <!-- LINHA DE INPUTS -->
+            <div class="row mt-5">
+
+                <!-- QUESTÃO 2 -->
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            Questão 2
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Calcular gasto de Energia</h5>
+                            <hr>
+                            <form id="form-2">
+                                <div class="row gy-3">
+                                    <div class="col-md-12">
+                                        <label for="quantidade" class="form-label">Quantidade:</label>
+                                        <input type="number" step="any" id="quantidade" class="form-control">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="valor" class="form-label">Valor (R$):</label>
+                                        <input type="number" step="any" id="valor" class="form-control">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="mt-2 w-100 btn btn-primary">Calcular</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="result-div-2" class="card-footer d-none">
+
+                        </div>
+                      </div>
+                </div>
+
+                <!-- QUESTÃO 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            Questão 3
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Tipo do Triângulo</h5>
+                            <hr>
+                            <form id="form-3">
+                                <div class="row gy-3">
+                                    <div class="col-md-12">
+                                        <label for="lado-a" class="form-label">Lado A</label>
+                                        <input type="number" step="any" id="lado-a" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="lado-b" class="form-label">Lado B</label>
+                                        <input type="number" step="any" id="lado-b" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="lado-c" class="form-label">Lado C</label>
+                                        <input type="number" step="any" id="lado-c" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="mt-2 w-100 btn btn-primary">Calcular</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div id="result-div-3" class="card-footer d-none">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUESTÃO 4 -->
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            Questão 4
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Calculadora</h5>
+                            <hr>
+                            <form id="form-4">
+                                <div class="row gy-3">
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <label for="num1" class="input-group-text">Valor 1</label>
+                                            <input type="number" step="any" id="num1" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <label for="num2" class="input-group-text">Valor 2</label>
+                                            <input type="number" step="any" id="num2" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Op</span>
+                                            <select id="operacao" class="form-select" required>
+                                                <option value="+">+</option>
+                                                <option value="-">-</option>
+                                                <option value="*">*</option>
+                                                <option value="/">/</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <button type="submit" class="w-100 btn btn-primary">Calcular</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="result-div-4" class="card-footer d-none">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="js/ex2.js"></script>
+    <script src="js/ex3.js"></script>
+    <script src="js/ex4.js"></script>
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

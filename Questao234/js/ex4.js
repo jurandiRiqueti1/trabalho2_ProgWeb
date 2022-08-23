@@ -1,4 +1,4 @@
-function calc(num1,num2,op){
+function calc3(num1,num2,op){
     let msg = '';
 
     switch (op) {
@@ -22,31 +22,27 @@ function calc(num1,num2,op){
     return msg;
 }
 
-function setResultado(msg){
-    document.querySelector('#result-div').classList.remove('d-none');
+function setResultado3(msg){
+    let divResult = document.querySelector('#result-div-4');
 
-    let divResult = document.querySelector('#resultado');
-    divResult.innerHTML = '';
+    divResult.classList.remove('d-none');
 
-    let p = document.createElement('p');
-    p.innerHTML = `Resultado: ${msg}`;
-
-    divResult.appendChild(p);
+    divResult.innerHTML = `Resultado: ${msg}`;
 }
 
-function click(event) {
+function click3(event) {
     event.preventDefault();
     
     let num1 = document.querySelector('#num1');
     let num2 = document.querySelector('#num2');
     let op = document.querySelector('#operacao');
 
-    let result = calc(Number(num1.value),Number(num2.value),op.value);
+    let result = calc3(Number(num1.value),Number(num2.value),op.value);
     
     console.log(result);
-    setResultado(result);
+    setResultado3(result);
 }
 
-const form = document.querySelector('#form');
+const form3 = document.querySelector('#form-4');
 
-form.addEventListener('submit', click);
+form3.addEventListener('submit', click3);
